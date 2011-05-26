@@ -74,16 +74,21 @@ class MarkerIcon  extends \PHPGoogleMaps\Core\MapObject {
 	 *
 	 * Throws an exception if the icon is invalid
 	 *
-	 * @param strin $icon URL of the icon image
+	 * If allow_url_fopen is not enabled on your server you will need to explicity specify the dimensions of the icon
+	 *
+	 * @param strin $icon Absolute URL of the icon image
 	 * @throws Exception
 	 * @return MarkerIcon
 	 */
 	public function __construct( $icon, array $options = null ) {
 
 		$size = @getimagesize( $icon );
+<<<<<<< HEAD
 		//if ( !$size ) {
 		//	return false;
 		//}
+=======
+>>>>>>> f6e885df565358ded260c407d4f157d415d41c60
 
 		$this->icon = $icon;
 
