@@ -81,9 +81,9 @@ class MarkerIcon  extends \PHPGoogleMaps\Core\MapObject {
 	public function __construct( $icon, array $options = null ) {
 
 		$size = @getimagesize( $icon );
-		if ( !$size ) {
-			return false;
-		}
+		//if ( !$size ) {
+		//	return false;
+		//}
 
 		$this->icon = $icon;
 
